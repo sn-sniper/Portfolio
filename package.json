@@ -1,13 +1,15 @@
 {
   "name": "creative-dev",
-  
+  "homepage": "https://sn-sniper.github.io/Portfolio/",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/public"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
